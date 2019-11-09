@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!-- META TAGS -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1 , shrink-to-fit=no">
+
+         <!-- BOOSTRAP CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/3d084ec093.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower|McLaren|Pacifico&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href= "style.css">
+      <title>Viagens da Sabrina</title>
+    </head>
+    <body>
+        <header>
+       <!-- NAVBAR -->
+       <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#748582">
+            <a class="navbar-brand" href="#">VIAGENS DA SABRINA</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end m-1" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link fonte-texto" data-toggle= "modal" data-target="#modalContato">Contato</a>
+                </li> 
+                <li class="nav-item dropdown mr-5">
+                  <a class="nav-link fonte-texto dropdown-toggle mr-5" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Destinos
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="https://pt.wikipedia.org/wiki/Alasca" target="_blank">Alaska</a>
+                    <a class="dropdown-item" href="https://pt.wikipedia.org/wiki/Nova_Iorque" target="_blank">New York</a>
+                    <a class="dropdown-item" href="https://pt.wikipedia.org/wiki/S%C3%A3o_Francisco_(Calif%C3%B3rnia)" target="_blank">San Francisco</a>
+                    <a class="dropdown-item" href="https://pt.wikipedia.org/wiki/Chicago" target="_blank">Chicago</a>
+                    <a class="dropdown-item" href="https://pt.wikipedia.org/wiki/Toronto" target="_blank">Toronto</a>
+                    <a class="dropdown-item" href="https://pt.wikipedia.org/wiki/Washington,_D.C." target="_blank">Washington,DC</a>
+                    <a class="dropdown-item" href="https://pt.wikipedia.org/wiki/Montreal" target="_blank">Montreal</a>
+                    <a class="dropdown-item" href="https://pt.wikipedia.org/wiki/Seattle" target="_blank">Seattle</a>
+                </div>
+                </li>
+                </li>
+              </ul>
+            </div>
+            <!-- MODAL -->
+  <div class="modal fade" id="modalContato" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalContato">Contato</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+           <!-- FORM -->
+  <form>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">E-mail</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect2">Selecione seu comentário</label>
+        <select multiple class="form-control" id="exampleFormControlSelect2">
+          <option>Dúvida</option>
+          <option>Elogio</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Escreva aqui</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+    </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+          </nav>
+        </header>
+        <main>
+            <!-- CARROSSEL -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100 imagem-carrossel" src="./imagens/Alaska.JPG" alt="Imagem de montanhas cobertas de neve no Alaska">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Alaska</h5>
+                            <p>"Happiness is only real when shared" - Christopher McCandless, Into the wild</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100 imagem-carrossel" src="./imagens/New York.JPG" alt="Imagem de uma ponte cruzando um rio e a silhueta da cidade de Nova Iorque com alguns prédios">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>New York City</h5>
+                            <p>"I want to wake up in the city that never sleeps" - Frank Sinatra, New York New York </p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100 imagem-carrossel" src="./imagens/San Francisco.JPG" alt="Imagem de uma ponte vermelha cruzando um rio na cidade de São Francisco">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>San Francisco (California)</h5>
+                            <p>"If you're going to San Francisco, be sure to wear some flowers in your hair" - Global Deejays, The sound of San Francisco </p>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Próximo</span>
+                    </a>
+                  </div>
+            </main>
+            <!-- PARAGRAFO -->
+            <section>
+            <div class="fonte-texto">
+           <div class="text-center">
+             <p class="pt-5"> 
+              Fiz essa page pra minha miga mais viajante de todas, porque devemos celebrar as conquistas umas das outras.</p>
+              <p> Sabris, espero que goste e lembre dos seus roles pelo mundo com carinho.
+            </p>
+          </div>
+        </div>
+            <!-- CARDS -->
+            <div class="container-fluid">
+                <div class="row justify-content-around">
+            <div class="card borda-card m-3" style="width: 18rem;">
+                <img class="card-img-top imagem-card" src="imagens/card montreal.JPG" alt="Roda Gigante iluminada em Montreal, Canadá">
+                <div class="card-body">
+                  <p class="card-text fonte-titulo-card">Montreal, Canada</p>
+                </div></div>
+                <div class="card borda-card m-3" style="width: 18rem;">
+                    <img class="card-img-top imagem-card" src="imagens/card chicago.JPG" alt="Paisagem de uma avenida em Chicago com uma placa escrito Chicago em vermelho">
+                    <div class="card-body">
+                      <p class="card-text fonte-titulo-card">Chicago, EUA</p>
+                    </div></div>
+                    <div class="card borda-card m-3" style="width: 18rem;">
+                        <img class="card-img-top imagem-card" src="imagens/card seattle.JPG" alt="Imagem do Mercado Publico de Seattle iluminado a noite">
+                        <div class="card-body">
+                          <p class="card-text fonte-titulo-card">Seattle, EUA</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                  <div class="container-fluid pt-5">
+                      <div class="row justify-content-around">
+          <div class="card borda-card m-3" style="width: 18rem;">
+              <img class="card-img-top imagem-card" src="imagens/card toronto.JPG" alt="Imagem de letras coloridas escrito Toronto, ponto turistico de Toronto no Canadá">
+              <div class="card-body">
+                <p class="card-text fonte-titulo-card">Toronto, Canada</p>
+              </div>
+            </div>
+              <div class="card borda-card m-3" style="width: 18rem;">
+                  <img class="card-img-top imagem-card" src="imagens/card dc.JPG" alt=" imagem do Monumento de Washington, um obelisco localizado no centro do Constitution Gardens, em Washington, D.C., Estados Unidos, fotografado a noite com fogos de artificio no céu.">
+                  <div class="card-body">
+                    <p class="card-text fonte-titulo-card">Washington, DC, EUA</p>
+                  </div>
+                </div>
+                  <div class="card borda-card m-3" style="width: 18rem;">
+                      <img class="card-img-top imagem-card" src="imagens/card alaska.JPG" alt="Aurora boreal vista do Alaska, flashes de luz verde no céu">
+                      <div class="card-body">
+                        <p class="card-text fonte-titulo-card">Aurora Boreal, Alaska</p>
+                      </div>
+                    </div> 
+                  </div>         
+            </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        </section>
+          <!-- FOOTER -->
+          <footer class="container-fluid pt-5">
+                  <p class="text-center fonte-texto-card-footer footer-redes">Redes Sociais</p>
+              <div class="row justify-content-center botão-redes">
+                  <a class="m-3 fab fa-facebook-f" href="https://www.facebook.com/sabrinabd" target="_blank"></a>
+                  <a class="m-3 fab fa-instagram" href="https://www.instagram.com/s.blima/?hl=pt-br" target="_blank"></a>
+              </div>
+              <div class="text-center fonte-texto-footer pt-1">
+                  <small>Copyright © Michelle Santana <time datetime="2019">2019</time></small>
+              </div>
+        <!-- script java bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+  </footer>
+</html>
